@@ -7,6 +7,7 @@ Systematic literature surveys on LLM agent capabilities, generated via a 6-phase
 | Report | Papers | Focus |
 |--------|--------|-------|
 | [Agent Coordination](agent-coordination.md) | 75+ | Inference-time multi-agent coordination — topology, communication, memory, routing, security, and protocol standards (MCP, A2A) across two paradigms (Agent OS vs. Dynamic Orchestration) |
+| [Agent Skills (2025)](agent-skills-2025.md) | 1,319 searched, 12 deep-read | LLM agent skill generation, management, and Agent-OS integration — skill suites, memory operating systems, context engineering, token efficiency, agent communication protocols, and domain applications |
 | [Agent OS: Context Engineering](agent-os-context-engineering.md) | 85 | Agent OS paradigm for LLM benchmark enhancement — context engineering, memory management (MemoryOS +49% F1), multi-agent coordination, and inference-time compute allocation without model retraining |
 | [Agent OS: Scientific Reasoning Benchmarks](agent-os-scientific-reasoning-benchmarks.md) | 75 | Quantitative mapping of Agent OS methods to scientific reasoning benchmarks — scaffold design yields 2.7x–11x performance gaps; MCTS as universal scaffold; identifies that only 4/14 major methods evaluated on scientific tasks |
 | [Inference-Time Scientific Agent](inference-time-scientific-agent.md) | 70 | Enhancing LLM scientific reasoning via inference-time compute scaling, external knowledge augmentation, tool use, and verifiable feedback environments |
