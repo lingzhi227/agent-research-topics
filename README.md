@@ -23,6 +23,7 @@ Systematic literature surveys on LLM agent capabilities, generated via a 6-phase
 | [Multi-GPU Agent Orchestration](multi-gpu-agent-orchestration.md) | 86 | Infrastructure for orchestrating 100+ LLM agents across multi-GPU nodes — disaggregated inference, agent-aware scheduling, KV-cache management, and workflow DAG optimization |
 | [PDF-to-LLM Conversion Tools](pdf-to-llm-conversion-tools.md) | 12 tools | Converting academic textbooks (PDF) to LLM-readable formats — benchmarking MinerU, Docling, Marker, GOT-OCR, and others across math, biology, and CS domains |
 | [Prompt Hacking & Attention Architecture](prompt-hacking-attention-architecture.md) | 662 searched, 7 deep-read | Architecture-aware prompt hacking — exploiting softmax normalization and causal attention masks for prompt optimization, attention sink manipulation, positional bias, and context engineering |
+| [Reasoning Format & LLM Performance](reasoning-format-llm-performance.md) | 844 searched, 12 deep-read | Reasoning format as a first-class variable — format changes cause 20–90+ pp performance swings; JSON constraints, code vs. text, latent vs. token reasoning, multi-format routing, and adaptive format selection |
 
 ## Methodology
 
