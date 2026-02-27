@@ -4,32 +4,74 @@ Systematic literature surveys on LLM agent capabilities, generated via a 6-phase
 
 ## Reports
 
+### 1-context-engineering
+
 | Report | Papers | Focus |
 |--------|--------|-------|
-| [Agent Coordination](agent-coordination.md) | 75+ | Inference-time multi-agent coordination — topology, communication, memory, routing, security, and protocol standards (MCP, A2A) across two paradigms (Agent OS vs. Dynamic Orchestration) |
-| [Agent Skills (2025)](agent-skills-2025.md) | 1,319 searched, 12 deep-read | LLM agent skill generation, management, and Agent-OS integration — skill suites, memory operating systems, context engineering, token efficiency, agent communication protocols, and domain applications |
-| [Coordination Benchmarks for Scientific MAS](coordination-benchmarks-scientific.md) | 529 searched, 12 deep-read | Benchmarks for multi-agent coordination in scientific domains — identifies empty intersection of coordination + scientific benchmarks, two-dimensional taxonomy, and 10 benchmark gaps |
-| [Agent OS: Context Engineering](agent-os-context-engineering.md) | 85 | Agent OS paradigm for LLM benchmark enhancement — context engineering, memory management (MemoryOS +49% F1), multi-agent coordination, and inference-time compute allocation without model retraining |
-| [Agent OS: Scientific Reasoning Benchmarks](agent-os-scientific-reasoning-benchmarks.md) | 75 | Quantitative mapping of Agent OS methods to scientific reasoning benchmarks — scaffold design yields 2.7x–11x performance gaps; MCTS as universal scaffold; identifies that only 4/14 major methods evaluated on scientific tasks |
-| [Inference-Time Scientific Agent](inference-time-scientific-agent.md) | 70 | Enhancing LLM scientific reasoning via inference-time compute scaling, external knowledge augmentation, tool use, and verifiable feedback environments |
-| [LLM Agent Action Chain Optimization](llm-agent-action-chain-optimization.md) | 70 | Action chain formal representation, verification, and efficiency optimization — FSM workflow modeling, LTL/model checking, constrained decoding, and code-as-action |
-| [LLM Agent Bioinformatics Mapping](llm-agent-bioinformatics-mapping.md) | 48 | Systematic mapping of 14 concept pairs between bioinformatics and LLM agent infrastructure — workflow orchestration, provenance, knowledge representation, tool ecosystems, and a cross-pollination roadmap |
-| [LLM Agent Formal Knowledge Representation](llm-agent-formal-knowledge-representation.md) | 74 | Using code, DSLs, and formal languages (instead of natural language) to represent agent knowledge — covering programmatic policies, learned reward functions, tool/API abstractions, and the PRAL research line |
-| [LLM Agent Paper Writing](llm-agent-paper-writing.md) | 23 projects | Open-source frameworks for LLM-driven automated scientific paper writing — from literature review to experiments, figures, LaTeX generation, and peer review |
-| [LLM Agentic Benchmarks & Long Context](llm-agentic-benchmarks-long-context.md) | 15 deep-read | LLM agent benchmark survey — long-context reasoning, scientific reasoning, tool calling, multi-step agent tasks, and evaluation methodology (dynamic benchmarks, token efficiency, process metrics) |
-| [LLM Bio Tools & Workflow Compatibility](llm-bio-tools-workflow.md) | 65 | Tool I/O incompatibility in LLM agent bioinformatics workflows — protocol standardization (MCP), knowledge-graph routing, semantic type systems, and a proposed three-layer architecture |
-| [LLM Knowledge Distillation & Reasoning](llm-knowledge-distillation-reasoning.md) | 70 | Enhancing LLM domain reasoning (math, biology, genomics, CS, statistics) via automatic prompt optimization, knowledge distillation, long-context retrieval, and document-grounded skill generation |
-| [Long-Horizon Reasoning (2025H2)](long-horizon-reasoning-2025h2.md) | 72 | The 2025H2 reasoning revolution — latent reasoning in continuous space, efficiency methods (40–73% token reduction), CoT faithfulness crisis (19–41%), and the shift from "think more" to "think smarter" |
-| [Long-Horizon Reasoning Agent](long-horizon-reasoning-agent.md) | 60+ | Inference-time system design for long-horizon LLM agents — search/planning, decomposition, reflection, memory management, multi-agent methods, compute allocation, and cognitive architectures |
-| [Massive Multi-Agent Benchmarks](massive-multi-agent-benchmarks.md) | 595 searched, 66 filtered, 12 deep-dived | Tasks requiring 10s–100s of LLM agents — social simulation, test-time scaling, infrastructure serving; three dimensions of agent scale and unified benchmark analysis |
-| [Mixed-Representation Reasoning](mixed-representation-reasoning.md) | 46 | Mixed-representation reasoning for LLMs — code, latent embeddings, graph structures, formal proofs, and dynamic per-step format selection as alternatives to natural language chain-of-thought |
-| [Multi-GPU Agent Benchmarks](multi-gpu-agent-benchmarks.md) | 298 searched, 83 high-relevance, 9 deep-dived | Benchmark collection for multi-GPU agent orchestration — scaffold design (10x performance range), adaptive topology routing, framework overhead analysis, and agent serving systems evaluation |
-| [Multi-GPU Agent Orchestration](multi-gpu-agent-orchestration.md) | 86 | Infrastructure for orchestrating 100+ LLM agents across multi-GPU nodes — disaggregated inference, agent-aware scheduling, KV-cache management, and workflow DAG optimization |
-| [Multi-GPU Agent Tasks](multi-gpu-agent-tasks.md) | 993 searched, 65 selected, 12 deep-dived | Scientific & technical tasks requiring multi-GPU LLM agent inference — search-verify pattern, evolutionary islands, parallel tree search, and GPU scaling properties |
-| [PDF-to-LLM Conversion Tools](pdf-to-llm-conversion-tools.md) | 12 tools | Converting academic textbooks (PDF) to LLM-readable formats — benchmarking MinerU, Docling, Marker, GOT-OCR, and others across math, biology, and CS domains |
-| [Prompt Hacking & Attention Architecture](prompt-hacking-attention-architecture.md) | 662 searched, 7 deep-read | Architecture-aware prompt hacking — exploiting softmax normalization and causal attention masks for prompt optimization, attention sink manipulation, positional bias, and context engineering |
-| [Reasoning Format & LLM Performance](reasoning-format-llm-performance.md) | 844 searched, 12 deep-read | Reasoning format as a first-class variable — format changes cause 20–90+ pp performance swings; JSON constraints, code vs. text, latent vs. token reasoning, multi-format routing, and adaptive format selection |
-| [Skill Evolution (2025)](skill-evolution-2025.md) | 104 searched, 15 deep-read | Agentic skill evolution — external skill libraries without weight updates, 5 evolution mechanisms, 6 skill representations, failure-driven evolution, cross-agent skill transfer, and safety alignment erosion |
+| [Agent OS: Context Engineering](1-context-engineering/agent-os-context-engineering.md) | 85 | Agent OS paradigm for LLM benchmark enhancement — context engineering, memory management (MemoryOS +49% F1), multi-agent coordination, and inference-time compute allocation without model retraining |
+
+### 2-tools-skills
+
+| Report | Papers | Focus |
+|--------|--------|-------|
+| [Agent Skills (2025)](2-tools-skills/agent-skills-2025.md) | 1,319 searched, 12 deep-read | LLM agent skill generation, management, and Agent-OS integration — skill suites, memory operating systems, context engineering, token efficiency, agent communication protocols, and domain applications |
+| [LLM Bio Tools & Workflow Compatibility](2-tools-skills/llm-bio-tools-workflow.md) | 65 | Tool I/O incompatibility in LLM agent bioinformatics workflows — protocol standardization (MCP), knowledge-graph routing, semantic type systems, and a proposed three-layer architecture |
+| [Skill Evolution (2025)](2-tools-skills/skill-evolution-2025.md) | 104 searched, 15 deep-read | Agentic skill evolution — external skill libraries without weight updates, 5 evolution mechanisms, 6 skill representations, failure-driven evolution, cross-agent skill transfer, and safety alignment erosion |
+
+### 3-Actions
+
+| Report | Papers | Focus |
+|--------|--------|-------|
+| [LLM Agent Action Chain Optimization](3-Actions/llm-agent-action-chain-optimization.md) | 70 | Action chain formal representation, verification, and efficiency optimization — FSM workflow modeling, LTL/model checking, constrained decoding, and code-as-action |
+
+### 3-Reasoning
+
+| Report | Papers | Focus |
+|--------|--------|-------|
+| [LLM Agent Formal Knowledge Representation](3-Reasoning/llm-agent-formal-knowledge-representation.md) | 74 | Using code, DSLs, and formal languages (instead of natural language) to represent agent knowledge — covering programmatic policies, learned reward functions, tool/API abstractions, and the PRAL research line |
+| [LLM Knowledge Distillation & Reasoning](3-Reasoning/llm-knowledge-distillation-reasoning.md) | 70 | Enhancing LLM domain reasoning (math, biology, genomics, CS, statistics) via automatic prompt optimization, knowledge distillation, long-context retrieval, and document-grounded skill generation |
+| [Long-Horizon Reasoning (2025H2)](3-Reasoning/long-horizon-reasoning-2025h2.md) | 72 | The 2025H2 reasoning revolution — latent reasoning in continuous space, efficiency methods (40–73% token reduction), CoT faithfulness crisis (19–41%), and the shift from "think more" to "think smarter" |
+| [Long-Horizon Reasoning Agent](3-Reasoning/long-horizon-reasoning-agent.md) | 60+ | Inference-time system design for long-horizon LLM agents — search/planning, decomposition, reflection, memory management, multi-agent methods, compute allocation, and cognitive architectures |
+| [Mixed-Representation Reasoning](3-Reasoning/mixed-representation-reasoning.md) | 46 | Mixed-representation reasoning for LLMs — code, latent embeddings, graph structures, formal proofs, and dynamic per-step format selection as alternatives to natural language chain-of-thought |
+| [Reasoning Format & LLM Performance](3-Reasoning/reasoning-format-llm-performance.md) | 844 searched, 12 deep-read | Reasoning format as a first-class variable — format changes cause 20–90+ pp performance swings; JSON constraints, code vs. text, latent vs. token reasoning, multi-format routing, and adaptive format selection |
+
+### 4-MAS
+
+| Report | Papers | Focus |
+|--------|--------|-------|
+| [Agent Coordination](4-MAS/agent-coordination.md) | 75+ | Inference-time multi-agent coordination — topology, communication, memory, routing, security, and protocol standards (MCP, A2A) across two paradigms (Agent OS vs. Dynamic Orchestration) |
+| [Massive Multi-Agent Benchmarks](4-MAS/massive-multi-agent-benchmarks.md) | 595 searched, 66 filtered, 12 deep-dived | Tasks requiring 10s–100s of LLM agents — social simulation, test-time scaling, infrastructure serving; three dimensions of agent scale and unified benchmark analysis |
+
+### 4-science-agent
+
+| Report | Papers | Focus |
+|--------|--------|-------|
+| [Inference-Time Scientific Agent](4-science-agent/inference-time-scientific-agent.md) | 70 | Enhancing LLM scientific reasoning via inference-time compute scaling, external knowledge augmentation, tool use, and verifiable feedback environments |
+| [LLM Agent Bioinformatics Mapping](4-science-agent/llm-agent-bioinformatics-mapping.md) | 48 | Systematic mapping of 14 concept pairs between bioinformatics and LLM agent infrastructure — workflow orchestration, provenance, knowledge representation, tool ecosystems, and a cross-pollination roadmap |
+
+### 5-Agent-OS
+
+| Report | Papers | Focus |
+|--------|--------|-------|
+| [Multi-GPU Agent Benchmarks](5-Agent-OS/multi-gpu-agent-benchmarks.md) | 298 searched, 83 high-relevance, 9 deep-dived | Benchmark collection for multi-GPU agent orchestration — scaffold design (10x performance range), adaptive topology routing, framework overhead analysis, and agent serving systems evaluation |
+| [Multi-GPU Agent Orchestration](5-Agent-OS/multi-gpu-agent-orchestration.md) | 86 | Infrastructure for orchestrating 100+ LLM agents across multi-GPU nodes — disaggregated inference, agent-aware scheduling, KV-cache management, and workflow DAG optimization |
+| [Multi-GPU Agent Tasks](5-Agent-OS/multi-gpu-agent-tasks.md) | 993 searched, 65 selected, 12 deep-dived | Scientific & technical tasks requiring multi-GPU LLM agent inference — search-verify pattern, evolutionary islands, parallel tree search, and GPU scaling properties |
+
+### 5-benchmarks
+
+| Report | Papers | Focus |
+|--------|--------|-------|
+| [Agent OS: Scientific Reasoning Benchmarks](5-benchmarks/agent-os-scientific-reasoning-benchmarks.md) | 75 | Quantitative mapping of Agent OS methods to scientific reasoning benchmarks — scaffold design yields 2.7x–11x performance gaps; MCTS as universal scaffold; identifies that only 4/14 major methods evaluated on scientific tasks |
+| [Coordination Benchmarks for Scientific MAS](5-benchmarks/coordination-benchmarks-scientific.md) | 529 searched, 12 deep-read | Benchmarks for multi-agent coordination in scientific domains — identifies empty intersection of coordination + scientific benchmarks, two-dimensional taxonomy, and 10 benchmark gaps |
+| [LLM Agentic Benchmarks & Long Context](5-benchmarks/llm-agentic-benchmarks-long-context.md) | 15 deep-read | LLM agent benchmark survey — long-context reasoning, scientific reasoning, tool calling, multi-step agent tasks, and evaluation methodology (dynamic benchmarks, token efficiency, process metrics) |
+
+### Others
+
+| Report | Papers | Focus |
+|--------|--------|-------|
+| [LLM Agent Paper Writing](Others/llm-agent-paper-writing.md) | 23 projects | Open-source frameworks for LLM-driven automated scientific paper writing — from literature review to experiments, figures, LaTeX generation, and peer review |
+| [PDF-to-LLM Conversion Tools](Others/pdf-to-llm-conversion-tools.md) | 12 tools | Converting academic textbooks (PDF) to LLM-readable formats — benchmarking MinerU, Docling, Marker, GOT-OCR, and others across math, biology, and CS domains |
+| [Prompt Hacking & Attention Architecture](Others/prompt-hacking-attention-architecture.md) | 662 searched, 7 deep-read | Architecture-aware prompt hacking — exploiting softmax normalization and causal attention masks for prompt optimization, attention sink manipulation, positional bias, and context engineering |
 
 ## Methodology
 
